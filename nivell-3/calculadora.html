@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/calculadora.js"></script>
+</head>
+<body>
+    <div class="container">
+        
+        <section class="calculadora">
+            <input type="text" name="resultado" class="inputs cuatro" id="display" readonly>
+            <button class="button" onclick="escribeNumeros(7)">7</button>
+            <button class="button" onclick="escribeNumeros(8)">8</button>
+            <button class="button" onclick="escribeNumeros(9)">9</button>
+            <button class="button operador" onclick="suma()">+</button>
+            <button class="button" onclick="escribeNumeros(4)">4</button>
+            <button class="button" onclick="escribeNumeros(5)">5</button>
+            <button class="button" onclick="escribeNumeros(6)">6</button>
+            <button class="button operador" onclick="resta()">-</button>
+            <button class="button" onclick="escribeNumeros(1)">1</button>
+            <button class="button" onclick="escribeNumeros(2)">2</button>
+            <button class="button" onclick="escribeNumeros(3)">3</button>
+            <button class="button operador" onclick="multiplica()">x</button>
+            <button class="button del" onclick="reset()">C</button>
+            <button class="button" onclick="escribeNumeros(0)">0</button>
+            <button class="button operador" onclick="divide()">/</button>
+            <button class="button operador" onclick="resultado()">=</button>
+        </section>
+    </div>
+    <script>
+        document.getElementById("display").value = 0;
+    </script>
+</body>
+</html>
